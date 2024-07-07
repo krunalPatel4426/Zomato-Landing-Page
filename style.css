@@ -1,0 +1,659 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.heroSection {
+  background-image: url(./img/heroSectionBackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+}
+
+.heroNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  padding-left: 35px;
+  padding-right: 40px;
+}
+
+.heroNav a {
+  color: white;
+  text-decoration: none;
+}
+
+.heroNavContainer {
+  display: flex;
+  gap: 18px;
+}
+
+.userIcon {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: solid 1px white;
+  display: none;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: calc(60vh - 65px);
+}
+
+.containerLogo {
+  width: 320px;
+  height: auto;
+}
+
+.ContainerHeading {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 450;
+}
+
+.containerInput {
+  background-color: white;
+  padding: 10px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  border-radius: 10px;
+}
+
+.containerForLocationInput {
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+
+.containerInputLocation {
+  border: none;
+  outline: none;
+  width: 100%;
+  border-right: 2px solid gray;
+  margin-left: 8px;
+}
+
+.containerForSearchInput {
+  display: flex;
+  align-items: center;
+  width: 65%;
+}
+
+.containerInputSearch {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-left: 8px;
+}
+
+.weOfferSection {
+  margin: 3rem auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.weOffer {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 1s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.weOffer:hover {
+  transform: scale(1.1);
+}
+
+.weOffer img {
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.weOfferContaint {
+  background-color: white;
+  padding: 12px;
+}
+
+.weOfferContaint h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.weOfferContaint p {
+  font-size: 12.5px;
+}
+
+.collection {
+  margin-bottom: 120px;
+  padding-left: 200px;
+  width: 100%;
+  position: relative;
+}
+.collection h1 {
+  font-weight: 400;
+  font-size: 45px;
+  padding-left: 12px;
+}
+
+.subHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 300;
+  padding-left: 12px;
+}
+
+
+
+.subHeading span:nth-child(2) {
+  color: rgb(224, 53, 70);
+  padding-right: 65px;
+}
+
+.cardCollection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.card {
+  height: 250px;
+  min-width: 240px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 85%
+  );
+}
+
+.cardCollection .card .contant {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  z-index: 5;
+}
+
+.contant h4 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.contant .span {
+  color: white;
+  font-weight: 250;
+}
+
+.card1 {
+  background-image: url(./img/c1.avif);
+  border-radius: 10px;
+}
+
+.card2 {
+  background-image: url(./img/c2.avif);
+  border-radius: 10px;
+}
+
+.card3 {
+  background-image: url(./img/c3.avif);
+  border-radius: 10px;
+}
+
+.card4 {
+  background-image: url(./img/c4.avif);
+  border-radius: 10px;
+}
+
+.getAppSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 65px;
+  gap: 8px;
+  background-color: rgb(255, 251, 247);
+}
+
+.leftSection{
+  width: 250px;
+}
+.leftSection .mobileBanner{
+  width: 230px;
+  height: 225px;
+}
+
+.rightSection{
+  width: 43%;
+}
+
+.textContentInGetApp{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 12px;
+}
+
+.getApp{
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.sendLink{
+  font-weight: 300;
+}
+
+.inputContainerPhoneEmail{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.radioInput{
+  display: flex;
+  align-items: center;
+  gap: 82px;
+}
+
+.mailRadioInputContainer{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.emailRadioInput{
+  accent-color: rgb(225, 107, 107);
+  height: 20px;
+  width: 20px;
+}
+
+.mailRadioInputContainer label{
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(28, 28, 28);
+}
+
+.phoneRadioInputContainer{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phoneRadioInputContainer label{
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(28, 28, 28);
+}
+
+.phoneRadioInput{
+  accent-color: rgb(225, 107, 107);
+  width: 20px;
+  height: 20px;
+}
+
+.EmailInput{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputEmail{
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1.5px solid rgb(185, 181, 181);
+}
+
+.inputEmail::placeholder{
+  color: rgb(185, 181, 181);
+  font-size: 17px;
+  font-weight: 300;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.shareAppLink{
+  background-color: rgb(225, 107, 107);
+  
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  
+  border: none;
+}
+
+.shareAppLink span{
+  color: white;
+  font-size: 16px;
+  font-weight: 250;
+}
+
+.downloadApp p{
+  color: rgb(185, 181, 181);
+  font-weight: 250;
+  padding-bottom: 12px;
+}
+
+.downloadAppPlayStore{
+  width: 150px;
+  margin-right: 18px;
+}
+.downloadAppApple{
+  width: 150px;
+}
+
+.exploreSection{
+  background-color: rgb(252, 252, 252);
+  margin-bottom: 80px;
+}
+
+.exploreContainer{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  padding-left: 145px;
+}
+
+.exploreNearMe{
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.exploreOptionContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.exploreOptionContainer p{
+  border: 0.01px solid rgb(208, 207, 207);
+  border-radius: 10px;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 25px;
+}
+
+.footerSection{
+  width: 100%;
+  padding-left: 150px;
+}
+
+.footerLogoAndInput{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.footerZomatoLogo{
+  width: 150px;
+}
+
+.footerInputContainer{
+  display: flex;
+  gap: 15px;
+  margin-right: 45px;
+}
+
+.countryButton, .langButton{
+  width: 120px;
+  background-color: transparent;
+  border: 1px solid rgb(183, 183, 183);
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  gap: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footerLinksSection{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 25px;
+}
+
+.linkContainer h5{
+  font-size: 17px;
+  font-weight: 350;
+  margin: 12px 0;
+}
+
+.footerLink{
+  text-decoration: none;
+  color: gray;
+  font-weight: 200;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  
+}
+
+.socialMediaLogo{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.socialMediaLogo button{
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.socialMediaLogo button i{
+  color: white;
+}
+
+.footerSectionAppLogo{
+  width: 85%;
+}
+
+.disclamer{
+  width: 95%;
+  color: gray;
+  border-top: 1px solid gray;
+  padding-top: 1.5rem;
+}
+
+
+@media only screen and (max-width: 950px){
+  .footerLinksSection{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 725px){
+  .footerLinksSection{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 600px){
+  .footerLinksSection{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footerSection{
+    padding-left: 20px;
+  }
+  .footerInputContainer{
+    margin-right: 0;
+  }
+  .footerSectionAppLogo{
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 870px){
+  .shareAppLink span{
+    display: none;
+
+  }
+
+  .shareAppLink::after{
+    content: 'Share';
+    color: white;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 800px){
+  .getApp{
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .exploreContainer{
+    width: 95%;
+    padding-left: 12px;
+  }
+  .exploreOptionContainer p{
+    font-size: 15px;
+    padding-left: 12px;
+  }
+  .leftSection{
+    display: none;
+  }
+  .rightSection{
+    width: 95%;
+  }
+  .shareAppLink{
+    font-size: 12px;
+  }
+  .userIcon {
+    display: flex;
+  }
+  .link {
+    display: none;
+  }
+  .heroSection {
+    min-height: 80vh;
+  }
+  .containerInput {
+    background-color: transparent;
+    flex-direction: column;
+    gap: 12px;
+    width: 98%;
+  }
+  /* .containerInputLocation,
+    .containerInputSearch{
+        padding: 18px;
+        border-radius: 10px; 
+        border: none;  
+        height: auto; 
+        width: 91%;
+    } */
+  .containerForLocationInput {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+    height: 2rem;
+  }
+
+  .containerInputLocation {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: auto;
+    margin-left: 12px;
+  }
+
+  .containerForSearchInput {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+    height: 2rem;
+  }
+
+  .containerInputSearch {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: auto;
+    margin-left: 12px;
+  }
+
+  .sectionContainer {
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    height: calc(80vh - 65px);
+  }
+
+  .getApp{
+    font-size: 30px;
+  }
+
+  .collection{
+    padding-left: 12px;
+  }
+}
